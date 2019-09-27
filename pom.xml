@@ -38,10 +38,6 @@
                 <configuration>
                     <to>
                         <image>326646175787.dkr.ecr.us-west-2.amazonaws.com/dcdojo-pooja</image>
-                        <auth>
-                            <username>pkrishnan@ippon.fr</username>
-                            <password>I'mSoSorryButItsF@keLov3</password>
-                        </auth>
                     </to>
                     <allowInsecureRegistries>true</allowInsecureRegistries>
                 </configuration>
