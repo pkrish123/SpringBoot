@@ -24,7 +24,6 @@
         <java.version>1.8</java.version>
     </properties>
 
-
     <build>
         <plugins>
             <plugin>
@@ -45,5 +44,18 @@
         </plugins>
 
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>My Releases</name>
+            <url>http://localhost:8081/repository/dcdojo-release</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>My Snapshots</name>
+            <url>http://localhost:8081/repository/dcdojo-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
