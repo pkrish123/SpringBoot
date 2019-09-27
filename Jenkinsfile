@@ -10,10 +10,11 @@ pipeline {
         sh 'mvn clean install'
       }
     }
-    stage('upload nexus'){
-      steps {
-        sh 'mvn deploy'
-      }
+    stage('build and push docker image') {
+          steps {
+           // using google JIB plugin
+           sh 'mvn compile com.google.cloud.tools:jib-maven-plugin:1.3.0:build -DsendCredentialsOverHttp=true'
+          }
     }
   }
 }

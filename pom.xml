@@ -36,7 +36,11 @@
                 <version>1.3.0</version>
                 <configuration>
                     <to>
-                        <image>326646175787.dkr.ecr.us-west-2.amazonaws.com/dcdojo-pooja</image>
+                        <image>localhost:8088/dcdojo</image>
+                        <auth>
+                            <username>admin</username>
+                            <password>admin123</password>
+                        </auth>
                     </to>
                     <allowInsecureRegistries>true</allowInsecureRegistries>
                 </configuration>
